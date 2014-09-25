@@ -17,6 +17,7 @@
 
 $plugin->version = 2014030701;
 $plugin->release = '2.6.1.2 (Build: 20140523)';
+$plugin->maturity = MATURITY_STABLE;
 $plugin->dependencies = array(
     'local_eliscore' => 2014030701
 );
