@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->version = 2015102201;
-$plugin->release = '3.0.3.0 (Build: 20160509)';
+$plugin->release = '3.0.7.0 (Build: 20170301)';
 $plugin->component = 'rlreport_course_completion_by_cluster';
 $plugin->dependencies = array(
     'local_eliscore' => 2015102200
