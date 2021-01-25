@@ -472,7 +472,9 @@ class course_completion_by_cluster_report extends table_report {
         $filterparams = php_report_filtering_get_active_filter_values($this->get_report_shortname(), 'field'.$this->get_report_shortname(),
                 $this->filter);
 
-        $filterparams = $filterparams[0]['value'];
+	if( is_array($filterparams) ) {
+		$filterparams = $filterparams[0]['value'];
+	}
         $filterparams = $filterparams ? explode(',', $filterparams) : array();
 
         // Loop through these additional parameters - new columns, will  have to eventually pass the table etc...
